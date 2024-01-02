@@ -1,0 +1,14 @@
+footer
+{
+    font-size: 18px;
+    position: absolute;
+    left:1100px;
+}        
+#mainborder
+{
+    position: absolute;
+    width: 40%;
+    left: 20px;
+    right: 20px;
+    top: 150px;
+}

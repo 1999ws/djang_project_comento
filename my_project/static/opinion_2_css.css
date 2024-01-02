@@ -1,0 +1,21 @@
+#category_opinion
+{
+    font-size: 18px;
+    position: absolute;
+    left:730px;
+}
+#mainborder
+{
+    position: absolute;
+    width: 40%;
+    left: 20px;
+    right: 20px;
+    top: 150px;
+}
+
+#sub_nav
+{
+    position: absolute;
+    left: 20px;
+    top : 200px;
+}

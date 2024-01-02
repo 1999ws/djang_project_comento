@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>코멘토일보</title>
     <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'opinion_2_css.css' %}">
 </head>
 <body>
     <header>
@@ -12,7 +13,7 @@
         <h2><a href="/signup/">회원가입</h2>
         <h3><a href="/login/">로그인</h3>
     </header>
-    <nav>
+    <nav id = "main_nav">
         <ul>
             <li><a href="/opinion/">오피니언</a></li>
             <li><a href="/politics/">정치</a></li>
@@ -21,6 +22,17 @@
             <li><a href="/sports/">스포츠</a></li>
             <li><a href="/entertainment/">연예</a></li>
         </ul>
+    </nav>
+    <footer id="category_opinion">
+        <p><a href="/opinion_1/">사설</a> | <a href="/opinion_2/">칼럼</a></p>
+    </footer>
+    <hr id = "mainborder">
+    <nav id = "sub_nav">
+        <ul id "sub_nav_ul">
+            <li><a>오피니언</a></li>
+            <li><a>></a></li>
+            <li><a>칼럼</a></li>
+        </ul> 
     </nav>
 </body>
 </html>

@@ -1,0 +1,26 @@
+.article1 {
+    display: flex;
+    /* margin: 50px; Adjust margin as needed */
+    margin-top: 120px;
+    margin-left: 120px;
+}
+
+.article-image {
+    flex: 0 0 250px; /* Fixed width for the image */
+    margin-right: 20px; /* Spacing between image and content */
+}
+
+.article-content {
+    flex: 1; /* 내용이 남은 공간을 채우도록 허용 */
+    display: flex; /* 내용 안에 있는 요소들을 정렬하기 위해 사용 */
+    flex-direction: column; /* 요소들을 세로 방향으로 정렬 */
+
+}
+
+.article-content h2 {
+    left: 400px;
+}
+.article-content p {
+    margin-top: 40px;
+    margin-left: 20px;
+}
