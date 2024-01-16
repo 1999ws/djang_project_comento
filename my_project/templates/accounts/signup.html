@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>코멘토일보</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'signup_css.css' %}">
+</head>
+<body>
+    <header>
+        <h1><a href="/main/">코멘토일보</a></h1>
+    </header>
+
+    <div class="signup-form">
+        <h2>회원가입</h2>
+        <form action="/signup/" method="post">
+            {% csrf_token %}
+            
+            <div class="input-group">
+                <label for="{{ form.username.id_for_label }}">아이디:</label>
+                {{ form.username }}
+                {% if form.username.errors %}
+                    <span class="error">{{ form.username.errors.0 }}</span>
+                {% endif %}
+            </div>
+            
+            <div class="input-group">
+                <label for="{{ form.password1.id_for_label }}">비밀번호:</label>
+                {{ form.password1 }}
+                {% if form.password1.errors %}
+                    <span class="error">{{ form.password1.errors.0 }}</span>
+                {% endif %}
+            </div>
+            
+            <div class="input-group">
+                <label for="{{ form.password2.id_for_label }}">비밀번호 확인:</label>
+                {{ form.password2 }}
+                {% if form.password2.errors %}
+                    <span class="error">{{ form.password2.errors.0 }}</span>
+                {% endif %}
+            </div>
+            
+            <div class="input-group">
+                <label for="{{ form.email.id_for_label }}">이메일:</label>
+                {{ form.email }}
+                {% if form.email.errors %}
+                    <span class="error">{{ form.email.errors.0 }}</span>
+                {% endif %}
+            </div>
+            
+            <button type="submit">가입하기</button>
+        </form>
+    </div>
+</body>
+</html>

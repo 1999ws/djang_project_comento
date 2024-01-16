@@ -19,3 +19,43 @@
     left: 20px;
     top : 200px;
 }
+.article1 {
+    display: flex;
+    margin-top: 120px;
+    margin-left: 120px;
+}
+
+.article-image {
+    flex: 0 0 250px;
+    margin-right: 20px;
+}
+
+.article-content {
+    flex: 1; 
+    display: flex; 
+    flex-direction: column; 
+
+}
+
+.article-content h2 {
+    left: 400px;
+}
+.article-content p {
+    margin-top: 40px;
+    margin-left: 20px;
+}
+.article2 {
+    display: flex;
+    margin-top: 50px;
+    margin-left: 120px;
+}
+.article3 {
+    display: flex;
+    margin-top: 50px;
+    margin-left: 120px;
+}
+hr
+{
+    margin-top: 15px;
+    width: 80%;
+}

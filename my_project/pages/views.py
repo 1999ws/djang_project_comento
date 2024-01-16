@@ -24,7 +24,3 @@ def sports(request):
     return render(request,'pages\sports.html')
 def entertainment(request):
     return render(request,'pages\entertainment.html')
-def login(request):
-    return render(request,'pages\login.html')
-def signup(request):
-    return render(request,'pages\signup.html')

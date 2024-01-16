@@ -6,14 +6,14 @@
 }
 
 .article-image {
-    flex: 0 0 250px; /* Fixed width for the image */
-    margin-right: 20px; /* Spacing between image and content */
+    flex: 0 0 250px; 
+    margin-right: 20px; 
 }
 
 .article-content {
-    flex: 1; /* 내용이 남은 공간을 채우도록 허용 */
-    display: flex; /* 내용 안에 있는 요소들을 정렬하기 위해 사용 */
-    flex-direction: column; /* 요소들을 세로 방향으로 정렬 */
+    flex: 1; 
+    display: flex; 
+    flex-direction: column; 
 
 }
 

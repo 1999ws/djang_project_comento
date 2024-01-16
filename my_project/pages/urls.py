@@ -12,6 +12,4 @@ urlpatterns = [
     path('economy/',views.economy),
     path('sports/',views.sports),
     path('entertainment/',views.entertainment),
-    path('login/',views.login),
-    path('signup/',views.signup),
 ]   

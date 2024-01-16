@@ -8,21 +8,8 @@
     <link rel="stylesheet" type="text/css" href="{% static 'opinion_1_css.css' %}">
 </head>
 <body>
-    <header>
-        <h1><a href="/main/">코멘토일보</a></h1>
-        <h2><a href="/signup/">회원가입</h2>
-        <h3><a href="/login/">로그인</h3>
-    </header>
-    <nav id = "main_nav">
-        <ul>
-            <li><a href="/opinion/">오피니언</a></li>
-            <li><a href="/politics/">정치</a></li>
-            <li><a href="/public/">사회</a></li>
-            <li><a href="/economy/">경제</a></li>
-            <li><a href="/sports/">스포츠</a></li>
-            <li><a href="/entertainment/">연예</a></li>
-        </ul>
-    </nav>
+    {%include 'header.html'%}
+    {%include 'nav.html'%}
     <footer id="category_opinion">
         <p><a href="/opinion_1/">사설</a> | <a href="/opinion_2/">칼럼</a></p>
     </footer>
@@ -34,45 +21,7 @@
             <li><a>사설</a></li>
         </ul> 
     </nav>
-    <div class="article1">
-        <div class="article-image">
-            <!-- Image goes here (250x250) -->
-            <img src="{% static 'picture.jpg' %}" alt="기사 1 이미지" width="200" height="200">
-        </div>
-        <div class="article-content">
-            <h2>기사 제목1</h2>
-            <p>
-                이 기사는 코멘토 일보의 첫 번째 기사입니다.
-            </p>
-        </div>
-        
-    </div>
-    <hr>
-    <div class="article2">
-        <div class="article-image">
-            <!-- Image goes here (250x250) -->
-            <img src="{% static 'picture.jpg' %}" alt="기사 2 이미지" width="200" height="200">
-        </div>
-        <div class="article-content">
-            <h2>기사 제목2</h2>
-            <p>
-                이 기사는 코멘토 일보의 두 번째 기사입니다.
-            </p>
-        </div>
-    </div>
-    <hr>
-    <div class="article3">
-        <div class="article-image">
-            <!-- Image goes here (250x250) -->
-            <img src="{% static 'picture.jpg' %}" alt="기사 3 이미지" width="200" height="200">
-        </div>
-        <div class="article-content">
-            <h2>기사 제목3</h2>
-            <p>
-                이 기사는 코멘토 일보의 세 번째 기사입니다.
-            </p>
-        </div>
-    </div>
+    {%include 'article.html'%}
     <script>
         // article1을 클릭하면 새로운 페이지로 이동하는 함수
         document.querySelector('.article1').addEventListener('click', function() {
